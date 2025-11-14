@@ -12,7 +12,12 @@
     "coverage": "mkdir -p ./coverage; c8 report --reporter=text-lcov > ./coverage/lcov.info",
     "test": "c8 node test.js"
   },
-  "keywords": [],
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "module": "./index.js",
+  "keywords": ["JSON", "TOON", "pack", "unpack"],
   "author": "Andrea Giammarchi",
   "license": "MIT",
   "type": "module",
