@@ -1,0 +1,30 @@
+{
+  "name": "packatoon",
+  "version": "0.0.0",
+  "description": "Pack JSON collections as TOON like format",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "coverage": "mkdir -p ./coverage; c8 report --reporter=text-lcov > ./coverage/lcov.info",
+    "test": "c8 node test.js"
+  },
+  "keywords": [],
+  "author": "Andrea Giammarchi",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "c8": "^10.1.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebReflection/packatoon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WebReflection/packatoon/issues"
+  },
+  "homepage": "https://github.com/WebReflection/packatoon#readme"
+}
