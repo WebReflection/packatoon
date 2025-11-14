@@ -1,6 +1,6 @@
 {
   "name": "packatoon",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Pack JSON collections as TOON like format",
   "main": "index.js",
   "files": [
@@ -17,7 +17,12 @@
     "./package.json": "./package.json"
   },
   "module": "./index.js",
-  "keywords": ["JSON", "TOON", "pack", "unpack"],
+  "keywords": [
+    "JSON",
+    "TOON",
+    "pack",
+    "unpack"
+  ],
   "author": "Andrea Giammarchi",
   "license": "MIT",
   "type": "module",
