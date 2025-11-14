@@ -1,6 +1,6 @@
 {
   "name": "packatoon",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Pack JSON collections as TOON like format",
   "main": "index.js",
   "files": [
