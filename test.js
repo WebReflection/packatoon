@@ -1,4 +1,4 @@
-import { pack, unpack, len } from './index.js';
+import { pack, unpack, len, toon } from './index.js';
 
 const { stringify } = JSON;
 
@@ -17,6 +17,10 @@ assert(len(empty), 0);
 assert(len(pack(single)), 1);
 assert(len(pack(double)), 2);
 assert(len(pack(multi)), 2);
+
+console.log(toon('empty', pack(empty)));
+console.log(toon('multi', pack(multi)));
+console.log(toon('list', [1,2,'"3',4], false));
 
 assert(stringify(pack(empty)), stringify([]));
 assert(stringify(pack(single)), stringify([1, 'a', 1]));
