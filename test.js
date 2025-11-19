@@ -1,4 +1,4 @@
-import { pack, unpack } from './index.js';
+import { pack, unpack, len } from './index.js';
 
 const { stringify } = JSON;
 
@@ -12,6 +12,11 @@ const assert = (actual, expected) => {
     throw new Error(`Expected ${expected} but got ${actual}`);
   }
 };
+
+assert(len(empty), 0);
+assert(len(pack(single)), 1);
+assert(len(pack(double)), 2);
+assert(len(pack(multi)), 2);
 
 assert(stringify(pack(empty)), stringify([]));
 assert(stringify(pack(single)), stringify([1, 'a', 1]));

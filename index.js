@@ -40,3 +40,14 @@ export const unpack = flat => {
   }
   return /** @type {T[]} */(collection);
 };
+
+/**
+ * @template T
+ * @param {T[]} collection
+ * @returns {number}
+ */
+export const len = collection => {
+  const { length } = collection;
+  // @ts-ignore
+  return length && ((length - 1) / collection[0]) - 1;
+};
